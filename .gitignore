@@ -5,3 +5,4 @@
 .settings
 .classpath
 *.iml
+ejb-per-ear/target/
