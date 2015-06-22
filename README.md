@@ -1,9 +1,11 @@
 The project produces ear file which has got a 'jar' and a ejb componcents
 - Interfaces are defines in 'spec' project and pom file produces a 'spec' jar
 - EJB components are just the implemetation of spec annotated with EJB tags
-- EJB application needs to define 'application.xml' and it should list the ejb components
-- If the spec's are packaged in way that ejb components dont see them in an ear file, then ear will not be deployed in gf server.
-- All the dependencies like spec and any 3rd prty jars should go in ear/lib folder
+- Since EJB application needs to define 'application.xml' and should list the ejb components, a runtime application.xml is created
+
+Couple of point to note
+- If the spec's are packaged in way that ejb components don't see them in an ear file, then ear will not be deployed in gf server.
+- All the dependencies like 'spec's and any 3rd party jars should go in ear/lib folder
 - Please carefully observe the server log for any errors
 
 
